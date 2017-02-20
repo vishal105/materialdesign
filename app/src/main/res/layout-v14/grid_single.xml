@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="2"
+    android:columnCount="2">
+
+    <ImageView
+        android:id="@+id/grid_image"
+        android:layout_width="191dp"
+        android:layout_height="176dp"
+        android:background="@drawable/imgres">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/grid_image1"
+        android:layout_width="191dp"
+        android:layout_height="176dp"
+        android:background="@drawable/members">
+    </ImageView>
+    <TextView
+    android:id="@+id/grid_text"
+    android:layout_width="191dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:textSize="14sp"
+    android:gravity="center">
+</TextView>
+
+    <TextView
+        android:id="@+id/grid_text1"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="14sp"
+        android:gravity="center">
+    </TextView>
+</GridLayout>

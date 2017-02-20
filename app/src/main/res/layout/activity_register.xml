@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="materialtest.example.vishal.materialdesign.activity.RegisterActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:id="@+id/second_act"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_second">
+
+
+    <ScrollView
+        android:id="@+id/contentScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bt_save"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+    <TextView
+        android:id="@+id/tv_registername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Name" />
+    <EditText
+        android:id="@+id/et_registername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:paddingBottom="8dp"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:paddingTop="8dp" />
+        <TextView
+            android:id="@+id/tv_registrphoneno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="Phone No." />
+        <EditText
+            android:id="@+id/et_registrphoneno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:paddingTop="8dp"
+            android:inputType="number"
+            android:maxLength="10"/>
+        <TextView
+            android:id="@+id/tv_registeremail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="Email" />
+        <EditText
+            android:id="@+id/et_registeremail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:paddingTop="8dp"
+            android:inputType="textEmailAddress"/>
+        <TextView
+            android:id="@+id/tv_registerpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/pass" />
+        <EditText
+            android:id="@+id/et_registerpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:paddingTop="8dp"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/colorPrimary"
+        android:text="@string/save"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
